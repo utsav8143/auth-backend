@@ -136,7 +136,7 @@ export async function login(req, res) {
 // @access Private
 export async function getMe(req, res) {
   const token = req.headers.authorization?.split(" ")[1];
-  console.log("Token:", token);
+
 
   if (!token) {
     return res.status(401).json({
@@ -234,7 +234,7 @@ export async function refreshToken(req, res) {
     });
   }
 }
-
+ 
 // @desc Log out User
 //@ROUTE /api/auth/logout
 // @access Private
