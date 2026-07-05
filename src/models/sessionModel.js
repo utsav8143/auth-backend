@@ -21,7 +21,7 @@ const sessionSchema=new mongoose.Schema({
     },
     revoked:{
         type:Boolean,
-        required:false
+        default:false
     }},{
         timestamp:true
 
